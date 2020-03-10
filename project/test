@@ -1,0 +1,4 @@
+var a ="asff";
+//if (a){;} else if(b) {var a;} else {var b;}
+var i=1,j=0;
+//for(var a,b=1;a;a){var t,b=1;};
