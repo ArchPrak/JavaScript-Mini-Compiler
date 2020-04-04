@@ -35,7 +35,10 @@ cmt_end \*\/
 "||"					{ return OR_OP; }
 "<="					{ return LE_OP; }
 ">="					{ return GE_OP; }
+"<"					{return L_OP;}
+">"					{return G_OP;}	
 "=="					{ return EQ_OP; }
+"==="					{ return TEQ_OP; }
 "!="					{ return NE_OP; }
 ";"					{ return ';'; }
 "("					{ return '('; }

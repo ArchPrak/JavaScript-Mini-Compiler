@@ -59,12 +59,15 @@ extern int yydebug;
     DEC_OP = 269,
     AND_OP = 270,
     OR_OP = 271,
-    LE_OP = 272,
-    GE_OP = 273,
-    EQ_OP = 274,
-    NE_OP = 275,
-    INT_LITERAL = 276,
-    STRING_LITERAL = 277
+    L_OP = 272,
+    G_OP = 273,
+    TEQ_OP = 274,
+    LE_OP = 275,
+    GE_OP = 276,
+    EQ_OP = 277,
+    NE_OP = 278,
+    INT_LITERAL = 279,
+    STRING_LITERAL = 280
   };
 #endif
 /* Tokens.  */
@@ -82,12 +85,15 @@ extern int yydebug;
 #define DEC_OP 269
 #define AND_OP 270
 #define OR_OP 271
-#define LE_OP 272
-#define GE_OP 273
-#define EQ_OP 274
-#define NE_OP 275
-#define INT_LITERAL 276
-#define STRING_LITERAL 277
+#define L_OP 272
+#define G_OP 273
+#define TEQ_OP 274
+#define LE_OP 275
+#define GE_OP 276
+#define EQ_OP 277
+#define NE_OP 278
+#define INT_LITERAL 279
+#define STRING_LITERAL 280
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -99,7 +105,7 @@ union YYSTYPE
     int intVal;
     char* charVal;
 
-#line 103 "y.tab.h" /* yacc.c:1909  */
+#line 109 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
