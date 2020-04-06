@@ -1,0 +1,3 @@
+var a = 1;
+b = a;
+if (c < b) { var c = 2;}
