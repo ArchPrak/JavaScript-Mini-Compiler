@@ -155,6 +155,20 @@ AST *makeAST(enum code op, AST *left, AST *right)
 	return p;
 }
 
+AST *addLast(AST *l, AST *p)
+{
+	if (l == NULL) {
+		return makeAST(LIST, p, NULL);
+	}
+
+	AST *q = l;
+	while (q->right != NULL) {
+		q = q->right;
+	}
+	q->right = (p->op!=LIST) ? makeAST(LIST, p, NULL) : p;
+	return l;
+}
+
 //enters keyword into symbol table, has to be called intially
 void putkwd(){
 	createEntry("return", "keyword","",-1);

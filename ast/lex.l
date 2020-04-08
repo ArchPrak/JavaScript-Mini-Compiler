@@ -36,15 +36,14 @@ cmt_end \*\/
 [0-9]*					{yylval.node = makeNum(atoi(strdup(yytext))); return INT_LITERAL;}
 	
 \"(\\.|[^"\\])*\"       {yylval.node = makeStr(strdup(yytext));return(STRING_LITERAL);}
-"&&"					{ return AND_OP; }
-"||"					{ return OR_OP; }
+"&&"					{ return AND1_OP; }
+"||"					{ return OR1_OP; }
 "<="					{ return LE1_OP; }
 ">="					{ return GE1_OP; }
 "<"					    { return L_OP;}
 ">"					    { return G_OP;}	
 "=="					{ return EQ1_OP; }
 "!="					{ return NE1_OP; }
-";"					    { return SC; }
 "++"					{ return INC_OP; }
 "--"					{ return DEC_OP; }
 
