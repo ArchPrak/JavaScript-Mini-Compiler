@@ -1,0 +1,14 @@
+//var a ="asff"; 
+//var b=9; 
+//if (a){;} else if(b) {var a;} else {var b;} 
+//var i=1,j=0; b = i + j; 
+//b= 1+j; 
+//for(i=1;i!=1;i){for(;i;i){}break;}
+//if(i===j){
+//;}
+var x1=1;
+var x2="abc";
+x2=1;
+x3=x2;
+x1=x3;
+//show
