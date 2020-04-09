@@ -1,0 +1,11 @@
+var a=1;
+var c=2;
+var d=3;
+for(var a=0;a<5;a=a+1){
+	if(a<3){
+		d=4;
+	}
+	else{
+		d=6;
+	}	
+}
