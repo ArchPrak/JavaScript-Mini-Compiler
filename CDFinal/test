@@ -1,0 +1,15 @@
+
+var a=1;
+var c=2;
+
+for(var a=1;a<4;a=a+1){
+
+	for(var b=2;b<5;b=b+1){
+		if(b = = 3){
+			d=4;		
+		}
+		else{
+			d=5;
+		}
+	}
+}
